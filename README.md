@@ -91,3 +91,13 @@ class Author extends Model
     //
 }
 ```
+
+- 参考) [\Illuminate\Database\Eloquent\Model](https://github.com/ShoheiImamura/laravel-chapter5/blob/master/chapter05/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php)
+
+---
+
+### 5-3-2規約とプロパティ
+
+- Eloquent クラスはデフォルトで、対応するテーブルや、プライマリーキーが設定されている
+- プロパティを指定することで、任意の設定に変更できる
+
