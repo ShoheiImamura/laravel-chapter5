@@ -75,3 +75,19 @@ backgroundTransition: 'zoom'
 - デフォルトは /app 直下に作成
 
     php artisan make:model (クラス名)
+
+--
+
+### 作成直後のクラス
+
+```php
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+// Illuminate\Database\Eloquent\Model を継承したクラスが作成される
+class Author extends Model
+{
+    //
+}
+```
