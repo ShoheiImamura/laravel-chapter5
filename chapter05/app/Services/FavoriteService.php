@@ -5,8 +5,19 @@ namespace App\Services;
 
 use App\DataProvider\Eloquent\Favorite;
 
+// use App\DataProvider\FavoriteRepositryInterface; // リファクタリング後に追加します。
+
 class FavoriteService
 {
+    // リファクタリング後に追加します
+
+    // private $favorite;
+
+    // public function __construct(FavoriteRepositoryInterface $favorite)
+    // {
+    //     $this->favorite = $favorite;
+    // }
+
     public function switchFavorite(int $bookId, int $userId, string $createdAt) :int
     {
         return \DB::transaction(
@@ -28,5 +39,11 @@ class FavoriteService
                 return 0;
             }
         );
+
+        // リファクタリング後
+        // public switchFavorite(int $bookId, int $userId, string $createdAt) :int
+        // {
+        //     return $this->favorite->switch($bookId, $userId, $createdAt);
+        // }
     }
 }
