@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Author' => $baseDir . '/app/Author.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -27,6 +28,9 @@ return array(
     'App\\User' => $baseDir . '/app/User.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+    'AuthorsTableSeeder' => $baseDir . '/database/seeds/AuthorsTableSeeder.php',
+    'BookdetailsTableSeeder' => $baseDir . '/database/seeds/BookdetailsTableSeeder.php',
+    'BooksTableSeeder' => $baseDir . '/database/seeds/BooksTableSeeder.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonInterval' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
     'Carbon\\CarbonPeriod' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonPeriod.php',
@@ -2578,6 +2582,7 @@ return array(
     'Psy\\VersionUpdater\\GitHubChecker' => $vendorDir . '/psy/psysh/src/VersionUpdater/GitHubChecker.php',
     'Psy\\VersionUpdater\\IntervalChecker' => $vendorDir . '/psy/psysh/src/VersionUpdater/IntervalChecker.php',
     'Psy\\VersionUpdater\\NoopChecker' => $vendorDir . '/psy/psysh/src/VersionUpdater/NoopChecker.php',
+    'PublishersTableSeeder' => $baseDir . '/database/seeds/PublishersTableSeeder.php',
     'Ramsey\\Uuid\\BinaryUtils' => $vendorDir . '/ramsey/uuid/src/BinaryUtils.php',
     'Ramsey\\Uuid\\Builder\\DefaultUuidBuilder' => $vendorDir . '/ramsey/uuid/src/Builder/DefaultUuidBuilder.php',
     'Ramsey\\Uuid\\Builder\\DegradedUuidBuilder' => $vendorDir . '/ramsey/uuid/src/Builder/DegradedUuidBuilder.php',
