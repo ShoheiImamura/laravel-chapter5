@@ -8,7 +8,6 @@ class FavoriteRepository implements FavoriteRepositoryInterface
 {
     private $favorite;
 
-    // コンストラクタインジェクション
     public function __construct(Favorite $favorite)
     {
         $this->favorite = $favorite;
